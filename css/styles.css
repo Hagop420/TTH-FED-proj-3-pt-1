@@ -94,6 +94,7 @@ input[id=zip]:focus{
    padding:13px;
     outline:none; box-shadow:none;
 
+    
 
 }
 
@@ -386,6 +387,11 @@ textarea.T_A{
 
 .news_hr{
    margin-top: 65px;
+}
+
+label[for$=zip]{
+   position: relative;
+   top:40px
 }
 
 
