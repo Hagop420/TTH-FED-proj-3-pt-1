@@ -10,12 +10,20 @@ fieldset{
   
 }
 
+
+
 .bottom{
    display: none;
 }
 
 .d_t_t_a{
    display: none;
+}
+
+.news,
+
+.contct_info{
+   color:initial ;
 }
 
 
@@ -62,6 +70,10 @@ form>label[for=state]{
 
 
 }
+
+select{
+   max-width: 103% !important;
+}
 form>input[id=Full_name],
 form>input[id=Email_address],
 form>input[id=telephone],
@@ -89,6 +101,9 @@ form>input[id=telephone]:focus,
 form>input[id=addy]:focus,
 form>input[id=city]:focus,
 form>input[id=state]:focus,
+
+form>textarea:focus,
+
 input[id=zip]:focus{
    border: solid 5px rgb(37, 99, 122);
    padding:13px;
@@ -96,6 +111,12 @@ input[id=zip]:focus{
 
     
 
+}
+
+
+.T_A:focus{
+   border: solid 5px rgb(37, 99, 122);
+    outline:none; box-shadow:none;  
 }
 
 label.zip_class{
@@ -222,6 +243,7 @@ textarea{
 }
 
 
+
 button[type$=mit]{
    background-color: rgb(56, 130, 105);
    padding: 25px;
@@ -264,12 +286,24 @@ button[type$=mit]{
    position: relative;
    margin: auto;
   }
+
+  ._ios{
+   display: none;
+}
 label{
    display: inline;
    position: relative;
    top:48px;
    right:100px
 }
+
+
+.copy{
+   padding-top: 10px;
+   margin-bottom: 5vh;
+}
+
+
 
 
 .citt{
@@ -321,6 +355,8 @@ input[type=checkbox] {
    display: flex;
    flex-direction: column;
 }
+
+
 
 input[type$=dio]{
    position: relative;
@@ -375,13 +411,23 @@ textarea.T_A{
 }
 
 
+.d_t_t_a{
+   position: absolute;
+   left: 30px;
+}
+.d_t_t_a:focus{
+   outline:none;
+   border: solid 5px rgb(37, 99, 122);
+
+}
+
 
 .zip_class+input{
    background-color: rgb(229, 233, 233);
    border:0;
    margin-top: 5px;
    padding:15px;
-   width: 30%;
+   width: 25%;
    border-radius: 5px;
 }
 
@@ -400,23 +446,13 @@ label[for$=zip]{
 }
 }
 
-
-@media (min-width:1024px){
-   .d_t_t_a{
-      position: relative;
-      left:20px;
-      display: inline;
+@media (min-width:812px){
+   .copy{
+      padding-top: 50px;
    }
-
-
-   .main_subit_btn{
-      width: 87% !important;
-      
-      position:relative;
-      left: 20px;
-   }
-
-
-
-  
 }
+
+
+
+
+
