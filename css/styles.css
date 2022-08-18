@@ -10,7 +10,9 @@ fieldset{
   
 }
 
-
+.bottom{
+   display: none;
+}
 
 .d_t_t_a{
    display: none;
@@ -127,8 +129,9 @@ input::placeholder{
    font-style: italic;
    display: flex;
    padding-right: 5px;
-   float:right
-   /* justify-content: flex-end; */
+   justify-content: flex-end;
+   position: absolute;
+   right:5px
 }
 
 
@@ -307,11 +310,11 @@ label{
 input[type=checkbox]+label {
    position: relative;
    margin-left: 45px;
-   top:50px
+   top:1px
 }
 input[type=checkbox] {
    position: relative;
-   top: 65px;
+   top: 18px;
    right:80px;
    display: flex;
    flex-direction: column;
@@ -329,7 +332,7 @@ input[type$=dio]+label{
 }
 
 .N_format{
-   padding-top: 50px;
+   padding-top: 5px;
 position: relative;
 right:90px
 }
@@ -337,30 +340,39 @@ right:90px
 
 
 textarea.T_A{
+   position: relative;
    display: none;
 }
 
 .main_subit_btn{
-   width: 87% !important;
+   width: 92% !important;
    
    position:relative;
-   right: 80px;
+   top:100px;
+   right: 25px;
 }
 
 .d_t_t_a{
+   position: absolute;
+   /* top: 1300px; */
+   right:80px;
+   display: inline-block;
+   padding: auto 4rem;
+}
+
+.topics{
    position: relative;
-   left:-80px;
-   display: inline;
+   right:30px;
+   top: 10px;
 }
 
 .copy{
    position: relative;
-   right:85px
+   top:75px;
+   right:25px
 }
 
-.zip_class{
 
-}
 
 .zip_class+input{
    background-color: rgb(229, 233, 233);
@@ -373,6 +385,11 @@ textarea.T_A{
 
 .news_hr{
    margin-top: 65px;
+}
+
+
+.bottom{
+   display: block;
 }
 }
 
@@ -391,4 +408,8 @@ textarea.T_A{
       position:relative;
       left: 20px;
    }
+
+
+
+  
 }

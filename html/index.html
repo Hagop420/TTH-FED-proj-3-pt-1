@@ -48,23 +48,23 @@
             
             <form method="POST">
             <label for="Full_name" class="f_n">Full Name</label>
-            <input id="Full_name" type="text" placeholder="Required" required>
+            <input id="Full_name" name="fullName" type="text" placeholder="Required" required>
 
 
-            <label for="Email_address" class="em">Email Adress</label>
-            <input id="Email_address" type="text" placeholder="Required" required>
+            <label for="Email_address" class="em" name="email" id="Email">Email Adress</label>
+            <input name="email" id="Email_address" type="text" placeholder="Required" required>
 
 
             <label for="telephone" class="ph">Phone Number</label>
-            <input id="telephone" type="text">
+            <input id="telephone" type="text" name="tel">
 
 
             <label for="addy" class="s_a">Street adress</label>
-            <input id="addy" type="text">
+            <input id="addy" type="text" name="address">
 
 
             <label for="city" class="citt" >City</label>
-            <input id="city" type="text">
+            <input id="city" type="text" name="city">
 
 
             <label for="state" class="state_class">State</label>
@@ -175,7 +175,9 @@
 <textarea class="T_A" name="TA-1" id="TA_1" cols="34" rows="7"></textarea>
 
 <!-- FOR DESKTOP -->
-<textarea class="d_t_t_a" name="TA-2" id="textarea-2" cols="54" rows="5"></textarea>
+<textarea class="d_t_t_a " 
+name="TA-1" id="TA_1" cols="110" rows="5"></textarea>
+
 
 <button class="main_subit_btn" type="submit">
    Sign Up
@@ -191,6 +193,14 @@
       </div>
    
    </div>
+
+
+
+   <div class="bottom" style="margin-bottom: 100px;"></div>
    
+
+
+
+
 </body>
 </html>
