@@ -1,0 +1,394 @@
+*{
+   font-family: 'Roboto Slab', serif;
+
+   
+}
+
+
+fieldset{
+   border:0;
+  
+}
+
+
+
+.d_t_t_a{
+   display: none;
+}
+
+
+label,p,legend{
+   color:rgb(134,134,134)
+}
+
+header>h1{
+   margin-top: 0;
+   display:flex;
+   justify-content: center;
+   font-family: 'Markazi Text', serif;
+   background-color: rgb(44, 59, 71);
+   color:#fff;
+   padding:15px;
+   width:100%;
+}
+
+form>label+input{
+   display: block;
+}
+
+.section-1{
+   margin-bottom: 25px;
+}
+
+.container > .section-1>h2,
+.container > .section-1>p{
+  text-align: center;
+}
+
+form>label[for=Full_name],
+form>label[for=Email_address],
+form>label[for=telephone],
+form>label[for=addy],
+form>label[for=city],
+form>label[for=state]{
+   display: block;
+  
+  width:97%;
+  padding:5px;
+
+
+
+
+}
+form>input[id=Full_name],
+form>input[id=Email_address],
+form>input[id=telephone],
+form>input[id=addy],
+form>input[id=city],
+form>input[id=state]{
+   border:0;
+   background: rgb(229, 233, 233);
+   padding:15px;
+   margin-top: 10px;
+   width:97%;
+   margin-bottom: 5px;
+   border-radius: 5px;
+
+
+
+}  
+
+input{
+   border:none 
+}
+form>input[id=Full_name]:focus,
+form>input[id=Email_address]:focus,
+form>input[id=telephone]:focus,
+form>input[id=addy]:focus,
+form>input[id=city]:focus,
+form>input[id=state]:focus{
+   border: solid 5px rgb(37, 99, 122);
+   padding:13px;
+    outline:none; box-shadow:none;
+
+
+}
+
+label.zip_class{
+   position: relative;
+   top: 20px;
+ 
+}
+
+.zip_class+input{
+   background-color: rgb(229, 233, 233);
+   border:0;
+   margin-top: 5px;
+   padding:15px;
+   width: 40%;
+   border-radius: 5px;
+}
+select{
+   max-width:100%;
+   width: 200%;   border:0;
+   background: rgb(229, 233, 233);
+
+ color: rgb(141, 145, 145);
+   padding:15px;
+   border-radius: 5px;
+}
+
+
+select:focus{
+   outline:none;
+   border: solid 5px rgb(37, 99, 122);
+}
+input::placeholder{
+   font-style: italic;
+   display: flex;
+   padding-right: 5px;
+   float:right
+   /* justify-content: flex-end; */
+}
+
+
+
+
+
+ input[type=checkbox]+label{
+   margin-left: 30px;
+  
+
+}
+
+
+
+
+.zip_class+input{
+  margin-top: 30px; 
+}
+
+ input[type=checkbox]{
+  position: relative;
+  top:15px;
+   
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+legend[class=N_format]{
+   padding: 25px;
+   margin-top: 20px;
+}
+
+/* form padding */
+div.container{
+   padding:5px
+}
+
+ input[type=radio]+label{
+   margin-left: 30px;
+ 
+}
+ input[type=radio]{
+   /* width:100%; */
+  position: relative;
+  top:15.3px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+/* display: flex; */
+}
+
+
+
+
+
+
+
+
+
+
+.border{
+   height:auto;
+   border-bottom:1px solid rgb(44, 59, 71);
+   padding:2.5px;
+   width:100%;
+   border-top: 3px solid rgb(44, 59, 71);
+}
+
+legend.topics{
+   margin-top: 25px;
+   margin-left: 4px;
+   margin-bottom: .9rem;
+}
+
+textarea{
+   border:0;
+   background: rgb(229, 233, 233);
+   border-radius: 5px;
+  /* margin:auto; */
+  position: relative;
+  left:0;
+  margin: .2rem;
+  display: block;
+}
+
+
+button[type$=mit]{
+   background-color: rgb(56, 130, 105);
+   padding: 25px;
+   width:100%;
+   background-color: rgb(50, 203, 171);
+   margin:auto;
+   border-radius: 5px;
+   display: block;
+   border: 0;
+   color:#fff;
+   font-size: 24px;
+   margin-top: 30px;
+}
+
+
+.news_hr{
+   height:3.5px;
+   background-color:rgb(44, 59, 71) ;
+   border:0;
+   margin-top: 20px;
+}
+
+.copy{
+   display: flex;
+   justify-content: center;
+   font-style: italic;
+   align-items: flex-end;
+   height:5vh
+}
+
+
+
+
+
+
+
+@media screen and  (min-width:768px){
+  .container{
+   max-width: 50%;
+   position: relative;
+   margin: auto;
+  }
+label{
+   display: inline;
+   position: relative;
+   top:48px;
+   right:100px
+}
+
+
+.citt{
+   position: relative;
+   right: 110px;
+   top: 48px;
+}
+
+.state_class{
+   position: relative;
+   right: 115px;
+   top: 40px;
+}
+
+.s_a{
+   position: relative;
+   right:145px;
+   top: 48px; 
+}
+
+.ph{
+   position: relative;
+   right:150px;
+   top: 48px;   
+}
+
+.em{
+   position: relative;
+   right:140px;
+   top: 48px; 
+}
+
+.f_n{
+   position: relative;
+   right:125px;
+   top:48px; 
+}
+
+
+input[type=checkbox]+label {
+   position: relative;
+   margin-left: 45px;
+   top:50px
+}
+input[type=checkbox] {
+   position: relative;
+   top: 65px;
+   right:80px;
+   display: flex;
+   flex-direction: column;
+}
+
+input[type$=dio]{
+   position: relative;
+   right: 90px;
+   top:20px
+}
+
+input[type$=dio]+label{
+   position: relative;
+   top: 5px !important;
+}
+
+.N_format{
+   padding-top: 50px;
+position: relative;
+right:90px
+}
+
+
+
+textarea.T_A{
+   display: none;
+}
+
+.main_subit_btn{
+   width: 87% !important;
+   
+   position:relative;
+   right: 80px;
+}
+
+.d_t_t_a{
+   position: relative;
+   left:-80px;
+   display: inline;
+}
+
+.copy{
+   position: relative;
+   right:85px
+}
+
+.zip_class{
+
+}
+
+.zip_class+input{
+   background-color: rgb(229, 233, 233);
+   border:0;
+   margin-top: 5px;
+   padding:15px;
+   width: 30%;
+   border-radius: 5px;
+}
+
+.news_hr{
+   margin-top: 65px;
+}
+}
+
+
+@media (min-width:1024px){
+   .d_t_t_a{
+      position: relative;
+      left:20px;
+      display: inline;
+   }
+
+
+   .main_subit_btn{
+      width: 87% !important;
+      
+      position:relative;
+      left: 20px;
+   }
+}
