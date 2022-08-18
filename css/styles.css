@@ -88,7 +88,8 @@ form>input[id=Email_address]:focus,
 form>input[id=telephone]:focus,
 form>input[id=addy]:focus,
 form>input[id=city]:focus,
-form>input[id=state]:focus{
+form>input[id=state]:focus,
+input[id=zip]:focus{
    border: solid 5px rgb(37, 99, 122);
    padding:13px;
     outline:none; box-shadow:none;
@@ -357,7 +358,7 @@ textarea.T_A{
    /* top: 1300px; */
    right:80px;
    display: inline-block;
-   padding: auto 4rem;
+ 
 }
 
 .topics{
