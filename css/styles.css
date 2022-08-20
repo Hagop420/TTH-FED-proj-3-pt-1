@@ -1,6 +1,5 @@
 *{
    font-family: 'Roboto Slab', serif;
-
    
 }
 
@@ -9,6 +8,42 @@ fieldset{
    border:0;
   
 }
+/* .d_t_t_a{
+  display: none;
+}
+
+.d_t_t_a_2{
+   display: inline;
+} */
+
+
+
+.comp{
+   display: none;
+}
+
+
+.d_t_t_a:focus{
+   outline:none;
+   border: solid 5px rgb(37, 99, 122);
+
+}
+.topics{
+   position: relative;
+   top:32px;
+  right:105px
+}
+
+.ab{
+margin-left: 4px; 
+  position: absolute;
+}
+
+textarea{
+   /* left:20px !important; */
+   position: relative !important;
+   top:34px !important
+}
 
 
 
@@ -16,9 +51,7 @@ fieldset{
    display: none;
 }
 
-.d_t_t_a{
-   display: none;
-}
+
 
 .news,
 
@@ -33,6 +66,7 @@ label,p,legend{
 
 header>h1{
    margin-top: 0;
+   margin:auto;
    display:flex;
    justify-content: center;
    font-family: 'Markazi Text', serif;
@@ -63,7 +97,7 @@ form>label[for=city],
 form>label[for=state]{
    display: block;
   
-  width:97%;
+ 
   padding:5px;
 
 
@@ -71,9 +105,7 @@ form>label[for=state]{
 
 }
 
-select{
-   max-width: 103% !important;
-}
+
 form>input[id=Full_name],
 form>input[id=Email_address],
 form>input[id=telephone],
@@ -84,7 +116,7 @@ form>input[id=state]{
    background: rgb(229, 233, 233);
    padding:15px;
    margin-top: 10px;
-   width:97%;
+   width:100%;
    margin-bottom: 5px;
    border-radius: 5px;
 
@@ -130,11 +162,12 @@ label.zip_class{
    border:0;
    margin-top: 5px;
    padding:15px;
-   width: 40%;
+   max-width: 30%;
+   width: 30%;
    border-radius: 5px;
 }
 select{
-   max-width:100%;
+   max-width:95%;
    width: 200%;   border:0;
    background: rgb(229, 233, 233);
 
@@ -151,7 +184,7 @@ select:focus{
 input::placeholder{
    font-style: italic;
    display: flex;
-   padding-right: 5px;
+   padding-right: 15px;
    justify-content: flex-end;
    position: absolute;
    right:5px
@@ -219,10 +252,11 @@ div.container{
 
 .border{
    height:auto;
-   border-bottom:1px solid rgb(44, 59, 71);
+   margin:auto;
+   border-bottom:2px solid rgb(44, 59, 71);
    padding:2.5px;
-   width:100%;
-   border-top: 3px solid rgb(44, 59, 71);
+   width:95%;
+   border-top: 4px solid rgb(44, 59, 71);
 }
 
 legend.topics{
@@ -249,7 +283,9 @@ button[type$=mit]{
    padding: 25px;
    width:100%;
    background-color: rgb(50, 203, 171);
-   margin:auto;
+   margin: auto;
+   position: relative;
+   top:15px;
    border-radius: 5px;
    display: block;
    border: 0;
@@ -281,6 +317,13 @@ button[type$=mit]{
 
 
 @media screen and  (min-width:768px){
+
+
+   header>h1 {
+     margin-bottom: 50px;
+  }
+
+
   .container{
    max-width: 50%;
    position: relative;
@@ -290,6 +333,31 @@ button[type$=mit]{
   ._ios{
    display: none;
 }
+
+
+.get_p{
+   width:130%;
+   position: relative;
+   right:40px
+}
+.contct_info{
+   position: relative;
+   top:35px;
+   right:65px
+}
+
+
+.border {
+   height: auto;
+   top:25px;
+   position: relative;
+   right:45px;
+   border-bottom: 2px solid rgb(44, 59, 71);
+   padding: 2.5px;
+   width: 130%;
+   border-top: 4px solid rgb(44, 59, 71);
+}
+
 label{
    display: inline;
    position: relative;
@@ -303,44 +371,38 @@ label{
    margin-bottom: 5vh;
 }
 
-
-
-
-.citt{
-   position: relative;
-   right: 110px;
-   top: 48px;
-}
-
-.state_class{
-   position: relative;
-   right: 115px;
-   top: 40px;
-}
-
-.s_a{
-   position: relative;
-   right:145px;
-   top: 48px; 
-}
-
-.ph{
-   position: relative;
-   right:150px;
-   top: 48px;   
-}
-
-.em{
-   position: relative;
-   right:140px;
-   top: 48px; 
-}
-
 .f_n{
-   position: relative;
-   right:125px;
-   top:48px; 
+   right: 140px;
 }
+.em{
+   right: 150px;
+}
+.ph{
+   right: 165px;
+}
+.s_a{
+   right: 160px;
+}
+
+
+label[for=zip]{
+   right: 110px;
+
+}
+
+
+
+
+
+
+
+/* .citt{
+   position: relative;
+   right: 100px;
+} */
+
+
+
 
 
 input[type=checkbox]+label {
@@ -377,45 +439,61 @@ right:90px
 
 
 
-textarea.T_A{
-   position: relative;
-   display: none;
-}
+
 
 .main_subit_btn{
-   width: 92% !important;
+   width: 100% !important;
    
    position:relative;
-   top:100px;
-   right: 25px;
+   top:120px;
+   padding-right: 40px;
+   /* right: 35px; */
 }
 
-.d_t_t_a{
-   position: absolute;
-   /* top: 1300px; */
-   right:80px;
-   display: inline-block;
- 
+form>input[id=Full_name],
+form>input[id=Email_address],
+form>input[id=telephone],
+form>input[id=addy],
+form>input[id=city],
+form>input[id=state]{
+   border:0;
+   background: rgb(229, 233, 233);
+   padding:15px;
+   margin-top: 10px;
+   width:100%;
+   margin-bottom: 5px;
+   border-radius: 5px;
+
+
+
+} 
+
+.wrapper{
+   position: relative;
+   right:55px
 }
 
 .topics{
    position: relative;
-   right:30px;
-   top: 10px;
+   right:165px;
+   top: 55px;
 }
 
 .copy{
    position: relative;
-   top:75px;
-   right:25px
+   top:2px;
+   right:70px
 }
 
 
-.d_t_t_a{
+
+
+.ab{
+   margin-left: 4px;
+
    position: absolute;
-   left: 30px;
 }
-.d_t_t_a:focus{
+textarea:focus{
    outline:none;
    border: solid 5px rgb(37, 99, 122);
 
@@ -427,7 +505,8 @@ textarea.T_A{
    border:0;
    margin-top: 5px;
    padding:15px;
-   width: 25%;
+   max-width: 35%;
+   width: 35%;
    border-radius: 5px;
 }
 
@@ -440,6 +519,18 @@ label[for$=zip]{
    top:40px
 }
 
+.d_t_t_a {
+   display:none
+}
+
+.comp{
+   position: relative !important;
+   display: inline;
+   margin-top: 34px !important;
+  margin: auto;
+   max-width: 100%;
+}
+
 
 .bottom{
    display: block;
@@ -449,6 +540,19 @@ label[for$=zip]{
 @media (min-width:812px){
    .copy{
       padding-top: 50px;
+   }
+}
+@media (min-width:1024px){
+   .wrapper{
+      left:20px
+   }
+
+   .topics{
+      right:91px
+   }
+
+   .copy{
+      left:5px
    }
 }
 
