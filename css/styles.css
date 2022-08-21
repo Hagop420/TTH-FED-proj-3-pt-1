@@ -6,16 +6,17 @@
 
 fieldset{
    border:0;
-  
+  display: flex;
+  flex-direction: column;
 }
-/* .d_t_t_a{
-  display: none;
+
+span.ab{
+   width:100%
 }
-.d_t_t_a_2{
-   display: inline;
-} */
-
-
+.input-flex{
+   display: flex;
+   flex-direction: column;
+}
 
 .comp{
    display: none;
@@ -49,6 +50,8 @@ textarea{
 .bottom{
    display: none;
 }
+
+
 
 
 
@@ -88,12 +91,12 @@ form>label+input{
   text-align: center;
 }
 
-form>label[for=Full_name],
-form>label[for=Email_address],
-form>label[for=telephone],
-form>label[for=addy],
-form>label[for=city],
-form>label[for=state]{
+.input-flex>input[for=Full_name],
+.input-flex>input[for=Email_address],
+.input-flex>input[for=telephone],
+.input-flex>input[for=addy],
+.input-flex>input[for=city],
+.input-flex>input[for=state]{
    display: block;
   
  
@@ -105,17 +108,19 @@ form>label[for=state]{
 }
 
 
-form>input[id=Full_name],
-form>input[id=Email_address],
-form>input[id=telephone],
-form>input[id=addy],
-form>input[id=city],
-form>input[id=state]{
+.input-flex>fieldset>input[id=Full_name],
+.input-flex>fieldset>input[id=Email_address],
+.input-flex>fieldset>input[id=telephone],
+.input-flex>fieldset>input[id=addy],
+.input-flex>fieldset>input[id=city],
+.input-flex>fieldset>input[id=state]{
    border:0;
    background: rgb(229, 233, 233);
    padding:15px;
    margin-top: 10px;
+   
    width:100%;
+   
    margin-bottom: 5px;
    border-radius: 5px;
 
@@ -195,7 +200,7 @@ input::placeholder{
 
 
  input[type=checkbox]+label{
-   margin-left: 30px;
+   margin-left: 60px;
   
 
 }
@@ -208,15 +213,19 @@ input::placeholder{
 }
 
  input[type=checkbox]{
-  position: relative;
-  top:15px;
-   
-  display: flex;
-  flex-direction: column;
-  
+   position: relative;
+   top:15px;
+  width:35px;
+  padding-top: 20px;
+
 
 }
 
+input[type=checkbox]+label{
+   right:30px;
+   position: relative;
+ 
+}
 legend[class=N_format]{
    padding: 25px;
    margin-top: 20px;
@@ -233,12 +242,19 @@ div.container{
 }
  input[type=radio]{
    /* width:100%; */
-  position: relative;
+  /* position: relative;
   top:15.3px;
   display: flex;
-  flex-direction: column;
+  right:165px;
+
+  flex-direction: column; */
   /* background-color: aqua; */
 /* display: flex; */
+
+position: relative;
+top:15px;
+width:35px;
+padding-top: 20px;
 }
 
 
@@ -252,9 +268,11 @@ div.container{
 
 .border{
    height:auto;
-   margin:.5rem;
+   margin:10px .5rem;
    border-bottom:2px solid rgb(44, 59, 71);
    padding:2.5px;
+   position: relative;
+   top:10px;
    width:100%;
    border-top: 4px solid rgb(44, 59, 71);
 }
@@ -323,6 +341,9 @@ button[type$=mit]{
      margin-bottom: 50px;
   }
 
+  .input-flex{
+   display: flex;
+  }
 
   .container{
    max-width: 50%;
@@ -334,12 +355,22 @@ button[type$=mit]{
    display: none;
 }
 
+.input-flex>fieldset>input[id=Full_name], .input-flex>fieldset>input[id=Email_address], .input-flex>fieldset>input[id=telephone], .input-flex>fieldset>input[id=addy], .input-flex>fieldset>input[id=city] {
+   border: 0;
+   background: rgb(229, 233, 233);
+   padding: 15px;
+   margin-top: 10px;
+   width: 100%;
+   margin-bottom: 5px;
+   border-radius: 5px;
+}
 
-.get_p{
+
+/* .get_p{
    width:130%;
    position: relative;
    right:40px
-}
+} */
 .contct_info{
    position: relative;
    top:35px;
@@ -407,7 +438,6 @@ label[for=zip]{
 
 
 
-
 input[type=checkbox]+label {
    position: relative;
    margin-left: 120px;
@@ -417,10 +447,9 @@ input[type=checkbox]+label {
 }
 input[type=checkbox] {
    position: relative;
-   top: 18px;
-   right:100px;
-   display: flex;
-   flex-direction: column;
+   right:110px
+   
+ 
 }
 
 
@@ -432,18 +461,32 @@ input[type=checkbox] {
 }
 
 
-input[type$=dio]{
-   position: relative;
-   right: 100px;
-   top:20px
+
+input[id$=zip]{
+   border-radius: 5px;
+   margin-left: 10px;
+padding: 15px;
+   background: rgb(229, 233, 233);
+   width: 25%;
 }
 
 input[type$=dio]+label{
    position: relative;
-   right: 100px;
+   right:100px;
+   top: .1px !important;
 
-   top: 5px !important;
 }
+input[type$=dio]{
+   position: relative;
+   right:110px
+  
+
+}
+
+
+
+
+
 
 .N_format{
    padding-top: 5px;
@@ -456,8 +499,8 @@ right:100px
 
 
 .main_subit_btn{
-   width: 150% !important;
-   padding: 10px !important;
+   width: 100% ;
+   padding: 10px !important ;
    position:relative;
    margin:auto;
    top:120px;
@@ -483,6 +526,23 @@ form>input[id=state]{
 
 } 
 
+.pos{
+   margin:auto;
+
+   position: relative;
+   display: flex;
+   right:55px;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.pos>button[type=submit]{
+   position: relative;
+   left:2px;
+   width: 100%;
+   
+}
+
 .wrapper{
    position: relative;
    right:55px
@@ -493,7 +553,8 @@ form>input[id=state]{
 .copy{
    position: relative;
    top:2px;
-   right:70px
+   text-align: center;
+   right:120px
 }
 
 
@@ -536,8 +597,8 @@ label[for$=zip]{
 }
 
 .d_t_t_a {
-   position: relative !important ;
-   width:100%
+   width:100%;
+   min-width: 50vh;
    
 }
 
