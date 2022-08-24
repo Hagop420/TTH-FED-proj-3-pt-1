@@ -123,11 +123,13 @@
          <!-- NENWSLETTER FORM SECTION -->
          <hr>
          <fieldset class="newsletter_fieldset">
-            <h2>Newsletter</h2>
+            <legend class="leg_news_h2">
+               <h2>Newsletter</h2>
+            </legend>
             <p>Select the newsletter you would like to recieve</p>
             <!-- CHECKBOXES -->
             <input type="checkbox" name="HTML_field" id="HTML-news">
-            <label for="CSS-check" class="HTML"> HTML News</label>
+            <label for="HTML-news" class="HTML"> HTML News</label>
 
             <input type="checkbox" name="css-field" id="CSS-check">
             <label for="CSS-check" class="CSS"> CSS News</label>
@@ -135,10 +137,11 @@
             <label for="JS-news" class="JS"> Javacript News</label>
             <p class="NN_format">Newsletter format</p>
             <!-- radio btn's -->
-            <input type="radio" name="radio-field" id="CSS-news">
-            <label for="HTML-news" class="CSS-radio"> CSS News</label>
-            <input type="radio" name="radio-field" id="plain-field">
-            <label for="JS-news" class="JS-radio"> Javacript News</label>
+            <input type="radio" name="radio-field" id="CSS-rad">
+            <label for="CSS-rad" class="CSS-radio"> CSS News</label>
+
+            <input type="radio" name="radio-field" id="plain-field-rad">
+            <label for="JS-news" class="plain-field-rad"> Javacript News</label>
             <p>Other topics you'd like to hear about</p>
             <textarea name="textarea" id="textarea_id" cols="80" rows="8"></textarea>
             <!-- btn submit -->

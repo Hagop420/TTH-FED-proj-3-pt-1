@@ -281,6 +281,13 @@ fieldset>select[id=pick_state_origin]:focus{
    
 }
 
+.leg_news_h2{
+   font-size: 20px;
+   text-align: left;
+margin-left: 20px;
+color:rgb(44, 59, 71)
+}
+
 textarea{
    width: 100%;
    border:none;
@@ -404,10 +411,12 @@ input.state{
    display: none;
 }
 
-
-.st::placeholder{
-
+label[for=JS-news]{
+   margin-right: 156px !important;
 }
+
+
+
 
 fieldset>label[for=full_name],
 fieldset>label[for=full_email],
@@ -430,6 +439,13 @@ label[for=zip_code]{
    
 }
 
+
+
+
+.container{
+   display: flex;
+   justify-content: center;
+}
 
 
 fieldset>label[for=full_name]{
@@ -552,6 +568,15 @@ legend.h3_leg>h3 {
    text-align: left;
 margin-left: 20px;
 margin-bottom: 0;   /* margin-bottom: 20px; */
+}
+
+
+
+.leg_news_h2{
+   font-size: 20px;
+   text-align: left;
+margin-left: 20px;
+color:rgb(44, 59, 71)
 }
 
 
