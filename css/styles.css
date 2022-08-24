@@ -3,6 +3,31 @@
  }
  
 
+
+ input[type=checkbox]+label{
+   position: relative;
+   left:10px
+}
+
+input[type=checkbox]{
+   position: relative;
+   right:10px
+}
+
+
+input[type=radio]+label{
+   position: relative;
+   left:10px
+}
+label[for=JS-ID]{
+   position: relative !important;
+   padding-right:40px
+}
+
+input[type=radio]{
+   position: relative;
+   right:10px
+}
   
  ::-webkit-scrollbar-thumb {
    background: #fff; 
@@ -608,3 +633,4 @@ color:rgb(44, 59, 71)
 
 
 }
+
