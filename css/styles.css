@@ -75,6 +75,11 @@ padding: 1rem;
    margin:auto;
    text-align: center;
 }
+
+textarea::placeholder{
+   padding: 15px;
+   text-align: left;
+}
 .section-1>p{
 
 margin-left: 5px;
