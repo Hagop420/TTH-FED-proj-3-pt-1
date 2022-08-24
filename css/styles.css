@@ -38,7 +38,6 @@ text-align: center;
   
    padding-left: 100px;
    justify-content: center;
-   font-family: 'Markazi Text', serif;
    background-color: rgb(44, 59, 71);
    color:#fff;
    padding:15px;
@@ -166,7 +165,10 @@ textarea:focus{
   
 }
 
-
+.plain-field-rad{
+   margin-right:    160px;
+   
+}
 fieldset>select[id=pick_state_origin]{
    /* max-width: 100%; */
    color:rgb(129, 134, 134);
@@ -213,10 +215,10 @@ justify-content: center;
    margin-right: 180px !important;
 }
 .CSS{
-   margin-right: 195px !important;
+   margin-right: 194px !important;
 }
 .JS{
-   margin-right: 155px !important;
+   margin-right: 145px !important;
 }
 
 /* radios */
@@ -242,7 +244,7 @@ justify-content: center;
 
 
  .CSS-radio{
-   margin-right: 195px !important;
+   margin-right: 227px !important;
 }
 .JS-radio{
    margin-right: 155px !important;
@@ -425,7 +427,15 @@ label[for=JS-news]{
    margin-right: 156px !important;
 }
 
+.html-radio-class{
+   right:20px !important
+}
 
+
+
+.CSS-radio{
+   margin-right: 187px !important;
+}
 
 
 fieldset>label[for=full_name],
