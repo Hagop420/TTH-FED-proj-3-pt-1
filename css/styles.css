@@ -153,7 +153,8 @@ label[for=zip_code]{
    
 }
 
-input[id=zip_code]:focus{
+input[id=zip_code]:focus,
+textarea:focus{
    border: solid 4px rgb(37, 99, 122);
    transition-duration: .5s;
     outline:none; box-shadow:none;
@@ -229,6 +230,10 @@ justify-content: center;
  
  
  }
+
+ label[for=JS-news]{
+   margin-right: 156px !important;
+}
 
 
  .CSS-radio{
@@ -402,8 +407,8 @@ fieldset>input[id=zip_code]{
    display: inline-block;
   position: relative;
   margin-left: 100px;
-  right: 145px; 
-  width:50%
+  right: 185px; 
+  width:25%
 }
 
 input.state{
@@ -439,10 +444,17 @@ label[for=zip_code]{
    
 }
 
+textarea::placeholder{
+   text-align: left;
+   padding: 15px;
+}
+
 
 
 
 .container{
+   align-items: center;
+   text-align: center;
    display: flex;
    justify-content: center;
 }

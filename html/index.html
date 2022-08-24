@@ -9,8 +9,9 @@
    <!-- Google Fonts  -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
    <!-- normalize cdn -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
    <!-- Font Awesome -->
@@ -45,9 +46,9 @@
                   <div class="media_auto_form">
                      <fieldset class="auto-form">
                         <label for="full_name">Full Name</label>
-                        <input type="text" name="full-name" id="full_name" placeholder="Required">
+                        <input type="text" name="full-name" id="full_name" required placeholder="Required">
                         <label for="full_email">Email Address</label>
-                        <input type="email" name="email-enter" id="full_email" placeholder="Required">
+                        <input type="email" name="email-enter" id="full_email" required placeholder="Required">
                         <label for="phone">Phone Number</label>
                         <input type="tel" name="phone_number" id="phone" placeholder="Phone">
                         <label for="home_address">Street Address</label>
@@ -140,10 +141,11 @@
             <input type="radio" name="radio-field" id="CSS-rad">
             <label for="CSS-rad" class="CSS-radio"> CSS News</label>
 
-            <input type="radio" name="radio-field" id="plain-field-rad">
+            <input type="radio" name="radio-field" id="JS-news">
             <label for="JS-news" class="plain-field-rad"> Javacript News</label>
             <p>Other topics you'd like to hear about</p>
-            <textarea name="textarea" id="textarea_id" cols="80" rows="8"></textarea>
+            <textarea name="textarea" id="textarea_id" cols="80" rows="8"
+               placeholder="Additional Feedback here..."></textarea>
             <!-- btn submit -->
             <button type="submit">Sign Up</button>
             <!-- COPYRIGHT -->
