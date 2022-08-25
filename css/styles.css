@@ -131,7 +131,8 @@ form{
 }
 
 fieldset{
-   border:none
+   border:none;
+   box-sizing: border-box
 }
 fieldset>label[for=full_name],
 fieldset>label[for=full_email],
