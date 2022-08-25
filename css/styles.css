@@ -496,7 +496,7 @@ textarea::placeholder{
 .container{
    align-items: center;
    text-align: center;
-   display: flex;
+   display: flex !important;
    justify-content: center;
 }
 
