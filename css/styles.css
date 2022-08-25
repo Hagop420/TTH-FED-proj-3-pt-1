@@ -165,7 +165,7 @@ input[id=zip_code]{
    border:0;
    background: rgb(229, 233, 233);
    display: block;
-   width:35%;
+   width:50%;
    padding: 15px 1rem;
    margin-left: 5px;
    /* margin:auto; */
